@@ -1,0 +1,133 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title> Lista de Compras </title>
+    
+     <link href="https://adriellyyamaoto.github.io/Lista-Mercado/style.css" rel= "stylesheet"/>
+         <script src="https://adriellyyamaoto.github.io/Lista-Mercado/script.js"></script>
+
+</head>
+<header>
+		<h3>#7DaysOfCode|Lista</h3>
+</header>
+<body>
+  <h1> Sua Lista de compras </h1>
+  
+  <div class="slider">
+    
+    <div class="slides">
+      <!-- radio button -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+      <input type="radio" name="radio-btn" id="radio8">
+      <!-- fim radio button -->
+      
+      <!-- slides imagem -->
+      <div class="slide first">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZdSoYZfM1hGtOS64_Qg-SYdm7S_qwqkKYg&usqp=CAU " alt="imagem1"/>
+      </div>
+      
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1qiUivzPBZkF22z0XyhatikYcVGhcSCvOA&usqp=CAU" alt="imagem2"/>
+      </div>
+      
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwQAV3k_ON-zRbhYtDBYE3p0qDJrBwh_JeSA&usqp=CAU" alt="imagem3"/>
+      </div>
+      
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVaLPesqqK1s-Fh2zwV1wTCajrpjfmWNZRA&usqp=CAU" alt="imagem4"/>
+      </div>
+      
+      <div class="slide ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMMahAkY9-PAgwpxXn8c_Z-8PjZJ9HlINsA&usqp=CAU" alt="imagem5"/>
+      </div>
+      
+      <div class="slide ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRudrhAcfOjSsxkNoh4jsLR1nB4QnUAqfu3mg&usqp=CAU" alt="imagem6"/>
+      </div>
+      
+      <div class="slide ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBAw8rKGrPy8z2ciLsrMBoMF-nbCGuFtTmA&usqp=CAU" alt="imagem7"/>
+      </div>
+      
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkELJpXXj7vp4XgStuQ6_Fhs_6lJy2txxwg&usqp=CAU" alt="imagem8"/>
+      </div>
+     <!-- fim slides imagem -->
+      
+      <!-- navigation auto-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"> </div>
+        <div class="auto-btn2"> </div>
+        <div class="auto-btn3"> </div>
+        <div class="auto-btn4"> </div>
+        <div class="auto-btn5"> </div>
+        <div class="auto-btn6"> </div>
+        <div class="auto-btn7"> </div>
+        <div class="auto-btn8"> </div>
+      </div>
+      <!-- fim navigation auto-->
+    </div>
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+      <label for="radio8" class="manual-btn"></label>
+      </div>
+      
+  </div><br><br>
+  
+  
+    
+  <label for="addIyem"> Quer adicionar algo a sua lista de compras?</label>
+  <input type="text" id="inp-item" name="item" onKeyPress = "inpItemReply ()"> <br><br>
+  <label for="addIyem"> Qual item você deseja adicionar?</label>
+  <input type="text" id="nome-item" name="name-item"><br><br>
+  <label for="categoria"> A qual categoria pertence o item ?</label><br><br>
+  <form>
+  <div class= "radio" >
+  <input type="radio" id="hortifruti" name="categorias" value="hortifruti">
+  <label for="hortifruti"> Hortifruti</label><br>
+  <input type="radio" id="Padaria" name="categorias" value="padaria">
+  <label for="Padaria">Padaria</label><br>
+  <input type="radio" id="talho" name="categorias" value="talho">
+  <label for="talho">Talho</label><br>
+  <input type="radio" id="congelados" name="categorias" value="congelados">
+  <label for="congelados">Congelados</label><br>
+  <input type="radio" id="laticinios" name="categorias" value="laticinios">
+  <label for="laticinios">Laticinios</label><br>
+  <input type="radio" id="essencial" name="categorias" value="essencial">
+  <label for="essencial">Essencial</label><br> 
+  <input type="radio" id="limpeza" name="categorias" value="limpeza">
+  <label for="limpeza">Limpeza</label><br>
+  <input type="radio" id="outros" name="categorias" value="outros">
+  <label for="outros">Outros</label><br><br>
+  </div>  
+  </form>  
+  <input id="btn-add" type="submit" onclick = "addItem ()" value="Adicionar">
+  <input id="btn-remover" type="submit" onclick = "remover()" value="Remover"> <br><br>
+  
+  <div class="lista">
+   <div id="hortifrutiList"></div><br><br>
+   <div id="padariaList"></div><br><br>
+   <div id="talhoList"></div><br><br>
+   <div id="congeladosList"></div><br><br>
+   <div id="laticiniosList"></div><br><br>
+   <div id="essencialList"></div><br><br>
+   <div id="limpezaList"></div><br><br>
+   <div id="outrosList"></div><br><br>
+    
+  </div>     
+	
+</body> 
+</html>  
