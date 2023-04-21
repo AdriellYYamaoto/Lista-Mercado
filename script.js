@@ -1,3 +1,4 @@
+function slide (){
 /* slide Loop */
 let count = 0;
 document.getElementById("radio1").checked = true;
@@ -14,7 +15,7 @@ function nextImage() {
     document.getElementById("radio" + count).checked = true;
 }
 /* Fim slide */
-
+}
 var hortifruti = [];
 var padaria = [];
 var talho = [];
