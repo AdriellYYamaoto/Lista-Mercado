@@ -1,11 +1,26 @@
+var hortifruti = [];
+var padaria = [];
+var talho = [];
+var congelados = [];
+var laticinios = [];
+var essencial = [];
+var limpeza = [];
+var outros = [];
+
+function onload(){
+    slide ();
+    makeOnlyFirstFieldAvailable();    
+}
+
 function slide (){
 /* slide Loop */
-let count = 0;
-document.getElementById("radio1").checked = true;
+    let count = 0;
+    document.getElementById("radio1").checked = true;
 
-setInterval(function () {
+    setInterval(function () {
     nextImage();
-}, 2000)
+    }, 2000)
+}
 
 function nextImage() {
     count++;
@@ -15,15 +30,6 @@ function nextImage() {
     document.getElementById("radio" + count).checked = true;
 }
 /* Fim slide */
-}
-var hortifruti = [];
-var padaria = [];
-var talho = [];
-var congelados = [];
-var laticinios = [];
-var essencial = [];
-var limpeza = [];
-var outros = [];
 
 function makeOnlyFirstFieldAvailable() {
     const itens = document.querySelectorAll(`div.radio input[type=radio]`);
@@ -35,9 +41,6 @@ function makeOnlyFirstFieldAvailable() {
     document.getElementById('btn-add').disabled = true;
     document.getElementById('btn-remover').disabled = true;
 }
-
-makeOnlyFirstFieldAvailable();
-
 
 function makeAllFieldAvailable() {
     const itens = document.querySelectorAll(`div.radio input[type=radio]`);
