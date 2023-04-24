@@ -17,7 +17,6 @@ function slide (){
 
     setInterval(function () {
         let count=0;
-        nextImage();
     }, 2000)
      if (count > 8) {
         count = 1;
