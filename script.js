@@ -13,23 +13,19 @@ function onload(){
 }
 
 function slide (){
-/* slide Loop */
-    let count = 0;
     document.getElementById("radio1").checked = true;
 
     setInterval(function () {
-    nextImage(count);
+        let count=0;
+        nextImage();
     }, 2000)
-}
-
-function nextImage(count) {
-    count++;
-    if (count > 8) {
+     if (count > 8) {
         count = 1;
     }
     document.getElementById("radio" + count).checked = true;
+    count++;
 }
-/* Fim slide */
+
 
 function makeOnlyFirstFieldAvailable() {
     const itens = document.querySelectorAll(`div.radio input[type=radio]`);
