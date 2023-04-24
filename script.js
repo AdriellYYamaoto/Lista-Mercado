@@ -17,12 +17,13 @@ function slide (){
 
     setInterval(function () {
         let count=0;
-    }, 2000)
-     if (count > 8) {
-        count = 1;
-    }
-    document.getElementById("radio" + count).checked = true;
-    count++;
+        
+        if (count > 8) {
+            count = 1;
+        }
+        document.getElementById("radio" + count).checked = true;
+        count++;
+    }, 2000);
 }
 
 
@@ -146,18 +147,18 @@ function removeFromArray(itemToRemove, arrayList) {
             arrayList.splice(i, 1);
         }
     }
-
-    function remover() {
-        let item = prompt("Qual item você quer excluir ?");
-        removeFromArray(item, hortifruti);
-        removeFromArray(item, padaria);
-        removeFromArray(item, talho);
-        removeFromArray(item, congelados);
-        removeFromArray(item, laticinios);
-        removeFromArray(item, essencial);
-        removeFromArray(item, limpeza);
-        removeFromArray(item, outros);
-        list();
-    }
-
 }
+
+function remover() {
+    let item = prompt("Qual item você quer excluir ?");
+    removeFromArray(item, hortifruti);
+    removeFromArray(item, padaria);
+    removeFromArray(item, talho);
+    removeFromArray(item, congelados);
+    removeFromArray(item, laticinios);
+    removeFromArray(item, essencial);
+    removeFromArray(item, limpeza);
+    removeFromArray(item, outros);
+    list();
+}
+
