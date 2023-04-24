@@ -18,7 +18,7 @@ function slide (){
     document.getElementById("radio1").checked = true;
 
     setInterval(function () {
-    nextImage();
+    nextImage(count);
     }, 2000)
 }
 
