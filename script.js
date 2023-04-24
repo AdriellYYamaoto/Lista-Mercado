@@ -16,12 +16,12 @@ function slide (){
     document.getElementById("radio1").checked = true;
 
     setInterval(function () {
-        let count=0;
+        let count=1;
         
         if (count > 8) {
             count = 1;
         }
-        document.getElementById("radio1" + count).checked = true;
+        document.getElementById("radio" + count).checked = true;
         count++;
     }, 2000);
 }
@@ -146,7 +146,6 @@ function removeFromArray(itemToRemove, arrayList) {
             arrayList.splice(i, 1);
         }
     }
-    alert('item removido ' + arrayList[i]);
 }
 
 function remover() {
@@ -160,5 +159,6 @@ function remover() {
     removeFromArray(item, limpeza);
     removeFromArray(item, outros);
     list();
+    alert('item removido ' + item );
 }
 
