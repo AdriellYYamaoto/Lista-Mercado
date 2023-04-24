@@ -21,7 +21,7 @@ function slide (){
         if (count > 8) {
             count = 1;
         }
-        document.getElementById("radio" + count).checked = true;
+        document.getElementById("radio1" + count).checked = true;
         count++;
     }, 2000);
 }
