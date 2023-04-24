@@ -22,7 +22,7 @@ function slide (){
     }, 2000)
 }
 
-function nextImage() {
+function nextImage(count) {
     count++;
     if (count > 8) {
         count = 1;
