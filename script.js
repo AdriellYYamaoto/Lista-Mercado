@@ -15,7 +15,8 @@ function onload(){
 function slide (){
     document.getElementById("radio1").checked = true;
     let count=1;
-    setInterval(function (count) {
+    
+    setInterval(function () {
         if (count > 8) {
             count = 1;
         }
