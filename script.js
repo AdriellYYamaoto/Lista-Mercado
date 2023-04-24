@@ -21,7 +21,7 @@ function slide (){
         if (count > 8) {
             count = 1;
         }
-        document.getElementById("radio" + count).checked = true;
+        document.getElementById("radio1" + count).checked = true;
         count++;
     }, 2000);
 }
@@ -143,10 +143,10 @@ function removeFromArray(itemToRemove, arrayList) {
     // Corpo do laço de repetição
     for (var i = 0; i < arrayList.length; i++) {
         if (itemToRemove == arrayList[i]) {
-            alert('item removido ' + arrayList[i]);
             arrayList.splice(i, 1);
         }
     }
+    alert('item removido ' + arrayList[i]);
 }
 
 function remover() {
